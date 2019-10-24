@@ -1,20 +1,6 @@
 //Óï¾ä
 public class Sequence{
 	public static void main(String[] args){
-		//Ñ­»·Óï¾ä
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		//Ñ¡ÔñÓï¾ä
 		// int day = 1;
 		
