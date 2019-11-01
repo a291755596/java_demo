@@ -51,10 +51,6 @@ public class api_arraylist {
 
 
 
-
-
-
-
         //ArrayList是一个泛型的数据集合，一般存储的都是引用数据类型
         //如果想要使用基本数据类型，就需要使用基本类型对应的包装类
         /*基本类型      包装类(引用类型都在java.lang下)
@@ -70,30 +66,57 @@ public class api_arraylist {
          */
 
         //生成1-33之间的随机数，添加到集合并遍历集合
-        ArrayList<Integer> list = new ArrayList<>();
+        //ArrayList<Integer> list = new ArrayList<>();
+        //Random r = new Random();
+
+        //for (int i = 0; i < 6; i++) {
+            //int num = r.nextInt(33) + 1;
+            //list.add(num);
+        //}
+
+        //for (int i = 0; i < list.size(); i++) {
+            //System.out.println("循环的数据为：" + list.get(i));
+        //}
+
+
+
+        //用一个大集合存入20个随机数，然后筛选出其中的偶数放入小集合，并且遍历出来
+        //筛选用方法实现
+        //创建一个大集合
+        ArrayList<Integer> bigList = new ArrayList<>();
+
+        //创建一个随机数
         Random r = new Random();
 
-        for (int i = 0; i < 6; i++) {
-            int num = r.nextInt(33) + 1;
-            list.add(num);
+        //创建20个随机数
+        for (int i = 0; i < 20; i++) {
+            int num = r.nextInt(100) + 1;  //1~100之间的随机数
+            bigList.add(num);
         }
 
-        for (int i = 0; i < list.size(); i++) {
-            System.out.println("循环的数据为：" + list.get(i));
+        System.out.println("大集合的内容：" + bigList);
+
+        ArrayList<Integer> smallList = getSmallList(bigList);
+        System.out.println("小集合里面共有偶数"+ smallList.size() + "个");
+        for (int i = 0; i < smallList.size(); i++) {
+            System.out.println("小集合里面的偶数：" + smallList.get(i));
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
+
+    //筛选方法：1、返回值类型：ArrayList<Integer>  2、方法名称smallList 3、参数列表 bigList
+    public static ArrayList<Integer> getSmallList(ArrayList<Integer> bigList){
+        //创建一个小集合装结果
+        ArrayList<Integer> smallList = new ArrayList<>();
+
+        for (int i = 0; i < bigList.size(); i++) {
+            int num = bigList.get(i);
+            if(num % 2 == 0){
+                smallList.add(num);
+            }
+        }
+
+        return smallList;
+    }
+
+
 }
