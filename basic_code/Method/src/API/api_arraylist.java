@@ -51,10 +51,6 @@ public class api_arraylist {
 
 
 
-
-
-
-
         //ArrayList是一个泛型的数据集合，一般存储的都是引用数据类型
         //如果想要使用基本数据类型，就需要使用基本类型对应的包装类
         /*基本类型      包装类(引用类型都在java.lang下)
@@ -81,19 +77,6 @@ public class api_arraylist {
         for (int i = 0; i < list.size(); i++) {
             System.out.println("循环的数据为：" + list.get(i));
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     }
 }
