@@ -69,9 +69,6 @@ public class api_arraylist {
         //ArrayList<Integer> list = new ArrayList<>();
         //Random r = new Random();
 
-<<<<<<< HEAD
-    }
-=======
         //for (int i = 0; i < 6; i++) {
             //int num = r.nextInt(33) + 1;
             //list.add(num);
@@ -120,7 +117,4 @@ public class api_arraylist {
 
         return smallList;
     }
-
-
->>>>>>> ea37608c959749173b09b3e820a959c492091bbc
 }
