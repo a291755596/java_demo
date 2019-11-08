@@ -13,8 +13,6 @@ package Inherit;
 
 */
 
-
-
 public class Inherit01 {
     public static void main(String[] args) {
         //创建了一个子类的对象，并且调用父类的方法
@@ -49,20 +47,6 @@ public class Inherit01 {
         teacher.send();
         teacher.call();
         teacher.show();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 
 }

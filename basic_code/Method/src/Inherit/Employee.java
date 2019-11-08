@@ -1,6 +1,13 @@
 package Inherit;
 
 public class Employee {
+    //父类的构造函数
+    public Employee(int num){
+        System.out.println("这是父类的构造函数");
+        System.out.println(num);
+    }
+
+
     //覆盖重写的应用
     public void call(){
         System.out.println("打电话");
