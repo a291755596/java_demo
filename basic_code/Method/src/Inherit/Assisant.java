@@ -1,5 +1,5 @@
 package Inherit;
 
-public class Assisant extends Employee {
-
-}
+//public class Assisant extends Employee {
+//
+//}
