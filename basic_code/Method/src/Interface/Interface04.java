@@ -6,15 +6,6 @@ public class Interface04 {
         System.out.println(MyInterface03.NUM);
 
 
-
-
-
-
-
-
-
-
-
 //        MyInterface03Impl impl = new MyInterface03Impl();
 //        impl.method();
         //这个是访问不到的，因为是私有默认方法
